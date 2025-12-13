@@ -1,11 +1,12 @@
 * {
     box-sizing:border-box;
     }
+
     body {
         margin: 0;
         font-family: 'Poppins', sans-serif;
         background-color: #D8DABF;
-        color: #434b30;
+        color: #434b30;   
     }
     .topområde {
         background-color: #c7caaf;
@@ -23,6 +24,8 @@
         color: #434b30;
         font-size: 20px;
         }
+
+
     .midte {
         padding-top: 120px;
         padding-bottom: 80px;
@@ -35,12 +38,17 @@
         max-width: 80%;
         border-radius: 30px;
         }
+
+
     .bundlinje {
         border: none;
         border-top: 1px solid #434b30;
         width: 80%;
         margin: 40px auto;
-    }        
+    }
+
+
+
     .velkommen {
     text-align: center;
     padding: 40px 20px 60px;
@@ -53,10 +61,13 @@
     color: #434b30; 
 }
 
+
+
+
 .omsektion {
-    padding: 20px 20px 60px; /* mindre side-padding på mobil */
+    padding: 20px 20px 60px;
     display: flex;
-    flex-direction: column;  /* MOBIL: billede over teksten */
+    flex-direction: column;
     align-items: center;
     gap: 24px;
 }
@@ -122,6 +133,8 @@
     margin-top: 10px;
     line-height: 1.6;
 }
+
+
 .noegleord-container {
     display: flex;
     justify-content: center;
@@ -135,15 +148,16 @@
     height: 180px;
     object-fit: cover;
     border-radius: 6px;
-    background-color: #c7caaf; 
+    background-color: #c7caaf;
 }
+
+
 
 html {
     scroll-behavior: smooth;
 }
-/* ----------------------------- */
-/* KONTAKT-SEKTION               */
-/* ----------------------------- */
+
+
 
 .kontakt {
     padding: 40px 20px 80px;
@@ -158,22 +172,24 @@ html {
 
 .kontakt-indhold {
     display: flex;
-    flex-direction: column;    /* MOBIL: billede ovenfor formular */
+    flex-direction: column;
     align-items: center;
     gap: 24px;
 }
 .kontakt-info-boks {
-    background-color: #e4e6c9;      /* lys boks som dine andre */
+    background-color: #e4e6c9;
     padding: 30px 30px 40px;
     max-width: 320px;
     width: 100%;
     box-sizing: border-box;
 }
 
+
+
 .info-overskrift {
     margin: 0 0 28px 0;
     font-size: 24px;
-    font-style: italic;             /* som på dit billede */
+    font-style: italic;
     color: #434b30;
 }
 
@@ -186,7 +202,7 @@ html {
 }
 
 .info-label {
-    font-weight: 600;               /* fed: Navn / E-mail / Nummer */
+    font-weight: 600;
     margin-bottom: 4px;
 }
 
@@ -194,46 +210,49 @@ html {
     font-weight: 400;
 }
 
-/* Den lyse boks bag formularen */
+.info-logo {
+    width: 70px;
+    opacity: 0.9;
+    display: block;
+    margin: 60px auto 0 auto;
+}
+    
+
+
 .kontakt-form-wrapper {
-    background-color: #e4e6c9;    /* samme type lys boks som om-tekst/projekter */
+    background-color: #e4e6c9;
     padding: 32px 40px;
     min-width: 320px;
     max-width: 380px;
 }
 
-/* Selve formular-layoutet */
 .kontakt-form {
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
 
-/* Hvert felt (label wrapper) */
 .kontakt-form label {
     display: block;
 }
 
-/* Inputs og textarea – selve felterne */
 .kontakt-form input,
 .kontakt-form textarea {
     width: 100%;
     padding: 14px 12px;
     border: 1px solid #434b30;
-    background-color: #D8DABF;    /* lidt lysere end body-baggrund */
+    background-color: #D8DABF;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     outline: none;
     box-sizing: border-box;
 }
 
-/* Størrelse på besked-feltet */
 .kontakt-form textarea {
     height: 160px;
-    resize: none;                 /* så man ikke kan trække i hjørnet */
+    resize: none;
 }
 
-/* Placeholder-tekst (Dit navn, Nummer osv.) */
 .kontakt-form input::placeholder,
 .kontakt-form textarea::placeholder {
     color: #434b30;
@@ -242,28 +261,30 @@ html {
 
 .kontakt-info-boks,
 .kontakt-form-wrapper {
-    width: 380px;          /* ens bredde */
-    min-height: 420px;     /* sikrer nogenlunde ens højde */
+    width: 380px;
+    min-height: 523px;
 }
 
-/* Send-knap */
 .kontakt-knap {
     margin-top: 12px;
     padding: 8px 40px;
     border: 1px solid #434b30;
-    background-color: #D8DABF;    /* samme grøn som header */
+    background-color: #D8DABF;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     cursor: pointer;
     display: block;
     margin-left: auto;
-    margin-right: auto;           /* centrer knappen */
+    margin-right: auto;
 }
 
-/* Lidt hover-effekt */
 .kontakt-knap:hover {
-    background-color: #c7caaf;    /* en anelse mørkere */
+    background-color: #c7caaf;
 }
+
+
+
+
 .programmer {
     margin-top: 30px;
     text-align: center;
@@ -277,7 +298,7 @@ html {
 
 .programmer-grid {
     display: flex;
-    flex-direction: column;   /* MOBIL: Ikoner i én kolonne */
+    flex-direction: column;
     align-items: center;
     gap: 30px;
 }
@@ -289,7 +310,7 @@ html {
 }
 
 .program img {
-    width: 60px;              /* mindre ikoner på mobil */
+    width: 60px;
     height: 60px;
     object-fit: contain;
     margin-bottom: 8px;
@@ -301,30 +322,30 @@ html {
     margin: 0;
     line-height: 1.3;
 }
-/* FOOTER – logo i midten, ikoner til højre */
+
+
+
 .footer {
-    background-color: #c7caaf;      /* samme som header */
+    background-color: #c7caaf;
     padding: 30px 20px;
     margin-top: 40px;
-    position: relative;             /* så vi kan placere ikonerne inde i footeren */
+    position: relative;
 }
 
-/* Logo centreret */
 .footer-logo {
     text-align: center;
 }
 
 .footer-logo img {
-    height: 70px;                   /* juster hvis du vil have det større/mindre */
+    height: 70px;
     display: inline-block;
 }
 
-/* Ikoner til højre, lodret */
 .footer-socials {
     position: absolute;
-    right: 20px;                    /* afstand ind fra højre kant */
+    right: 20px;
     top: 50%;
-    transform: translateY(-50%);    /* centrer dem lodret i footeren */
+    transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -336,20 +357,21 @@ html {
     display: block;
 }
 
-/* Links i footeren */
 .footer a {
     text-decoration: none;
 }
 
 
-/* projekter side */
+
+
+
 .projektside {
     padding: 40px 20px 60px;
 }
 
 .projekt-layout {
     display: flex;
-    flex-direction: column;   /* MOBIL: billede over tekst */
+    flex-direction: column;
     align-items: center;
     gap: 20px;
     margin-bottom: 100px;
@@ -383,7 +405,6 @@ html {
     margin-bottom: 14px;
 }
 
-/* CTA-område nederst i projektet */
 .projekt-cta {
     margin-top: 30px;
     text-align: center;
@@ -396,12 +417,11 @@ html {
     color: #434b30;
 }
 
-/* CTA-knap */
 .projekt-cta-knap {
     display: inline-block;
     padding: 8px 30px;
     border: 1px solid #434b30;
-    background-color: #c7caaf;      /* samme grøn som headeren */
+    background-color: #c7caaf;
     color: #434b30;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -410,41 +430,45 @@ html {
     border-radius: 2px;
 }
 
-/* Hover-effekt */
 .projekt-cta-knap:hover {
-    background-color: #b7ba9e;       /* lidt mørkere grøn */
+    background-color: #b7ba9e;
 }
 
 
 
-@media (min-width: 768px) {
 
+
+
+@media (min-width: 768px) {
+    .page-wrapper {
+        padding: 0 20px;
+    }
     .omsektion {
         padding: 20px 60px 80px;
-        flex-direction: row;      /* billede og tekst ved siden af hinanden */
+        flex-direction: row;
         align-items: flex-start;
-        justify-content: center;   /* ➜ CENTRER DET HELE IGEN */
+        justify-content: center;
         gap: 40px;
     }
 
     .kontakt-indhold {
-        flex-direction: row;          /* ➜ GØR DEM VED SIDEN AF HINANDEN */
-        justify-content: center;      /* centrer dem */
+        flex-direction: row;
+        justify-content: center;
         align-items: flex-start;
-        gap: 60px;                    /* afstand mellem boksen og formularen */
+        gap: 60px;
     }
 
     .kontakt-info-boks {
-        max-width: 320px;             /* samme bredde som formularen */
+        max-width: 320px;
     }
     .programmer-grid {
-        flex-direction: row;     /* DESKTOP: ikoner i række */
+        flex-direction: row;
         justify-content: center;
         gap: 50px;
     }
 
     .program img {
-        width: 50px;             /* større ikoner på desktop */
+        width: 50px;
         height: 50px;
     }
     .projekt-layout {
@@ -456,7 +480,6 @@ html {
         margin-bottom: 100px;
     }
 
-    /* Hver anden sektion kan vendes ved at give den class="projekt-layout reverse" */
     .projekt-layout.reverse {
         flex-direction: row-reverse;
     }
