@@ -87,7 +87,7 @@
 .om-tekst h2 {
     margin-top: 0;
     margin-bottom: 15px;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .om-tekst p {
@@ -145,12 +145,32 @@
 
 .noegleord-billede img {
     width: 220px;
-    height: 180px;
+    height: 220px;
     object-fit: cover;
     border-radius: 6px;
     background-color: #c7caaf;
 }
 
+.se-mine-projekter-cta {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.se-mine-projekter-cta-knap {
+    display: inline-block;
+    padding: 12px 20px;
+    border: 1px solid #434b30;
+    background-color: #c7caaf;
+    color: #434b30;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.se-mine-projekter-cta-knap:hover {
+    background-color: #b7ba9e;
+}
 
 
 html {
@@ -188,8 +208,8 @@ html {
 
 .info-overskrift {
     margin: 0 0 28px 0;
-    font-size: 24px;
-    font-style: italic;
+    font-size: 22px;
+    font-style: regular;
     color: #434b30;
 }
 
@@ -207,7 +227,7 @@ html {
 }
 
 .info-value {
-    font-weight: 400;
+    font-size: 16px;
 }
 
 .info-logo {
@@ -378,15 +398,11 @@ html {
     margin-top: 100px;
 }
 
-.projekt-billede img {
-    width: 100%;
-    max-width: 420px;
-    display: block;
-}
 .projekt-billede video {
     width: 100%;
     max-width: 420px;
     display: block;
+    border-radius: 6px;
 }
 
 .projekt-tekst-fuld {
@@ -395,12 +411,12 @@ html {
 
 .projekt-tekst-fuld h2 {
     margin-top: 0;
-    font-size: 26px;
+    font-size: 24px;
     color: #434b30;
 }
 
 .projekt-tekst-fuld p {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.6;
     margin-bottom: 14px;
 }
@@ -412,7 +428,7 @@ html {
 
 .projekt-cta-tekst {
     margin: 0 0 12px 0;
-    font-size: 20px;
+    font-size: 16px;
     font-style: italic;
     color: #434b30;
 }
@@ -435,6 +451,92 @@ html {
 }
 
 
+
+
+.p-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+}
+
+.p-carousel__viewport {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 6px;
+}
+
+.p-carousel__slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  margin: 0;
+    position: relative;
+}
+
+.p-carousel__slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+
+.p-carousel__nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.p-carousel__dot {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #434b30;
+  border-radius: 50%;
+  background: transparent;
+  display: inline-block;
+}
+
+
+.p-carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border: 1px solid #434b30;
+  background-color: rgba(216, 218, 191, 0.9);
+  border-radius: 50%;
+  display: block;
+}
+
+
+.p-carousel__btn--prev { left: 10px; }
+.p-carousel__btn--next { right: 10px; }
+
+
+.p-carousel__btn--prev::before,
+.p-carousel__btn--next::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #434b30;
+  border-bottom: 2px solid #434b30;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.p-carousel__btn--next::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.p-carousel__viewport::-webkit-scrollbar { height: 0; }
+.p-carousel__viewport { scrollbar-width: none; }
 
 
 
