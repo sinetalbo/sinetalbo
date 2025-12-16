@@ -357,12 +357,11 @@ html {
 
 .footer-logo img {
     height: 70px;
-    display: inline-block;
 }
 
 .footer-socials {
     position: absolute;
-    right: 20px;
+    right: 60px;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
@@ -378,6 +377,7 @@ html {
 
 .footer a {
     text-decoration: none;
+
 }
 
 
@@ -485,52 +485,27 @@ html {
 .p-carousel__nav {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
   margin-top: 10px;
 }
 
-.p-carousel__dot {
-  width: 12px;
-  height: 12px;
-  border: 1px solid #434b30;
-  border-radius: 50%;
-  background: transparent;
+.p-carousel__navlink {
   display: inline-block;
-}
-
-
-.p-carousel__btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 36px;
-  height: 36px;
+  min-width: 28px;
+  padding: 6px 10px;
+  text-align: center;
   border: 1px solid #434b30;
-  background-color: rgba(216, 218, 191, 0.9);
-  border-radius: 50%;
-  display: block;
+  border-radius: 6px;
+  background-color: #c7caaf;
+  color: #434b30;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 1;
 }
 
-
-.p-carousel__btn--prev { left: 10px; }
-.p-carousel__btn--next { right: 10px; }
-
-
-.p-carousel__btn--prev::before,
-.p-carousel__btn--next::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 10px;
-  height: 10px;
-  border-right: 2px solid #434b30;
-  border-bottom: 2px solid #434b30;
-  transform: translate(-50%, -50%) rotate(135deg);
-}
-
-.p-carousel__btn--next::before {
-  transform: translate(-50%, -50%) rotate(-45deg);
+.p-carousel__navlink:hover {
+  background-color: #b7ba9e;
 }
 
 
@@ -541,9 +516,6 @@ html {
 
 
 @media (min-width: 768px) {
-    .page-wrapper {
-        padding: 0 20px;
-    }
     .omsektion {
         padding: 20px 60px 80px;
         flex-direction: row;
